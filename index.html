@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A fan site dedicated to Studio Ghibli films and characters." />
+  <title>Studio Ghibli Fan Site</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <h1 class="header__title">Studio Ghibli Fan Site</h1>
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Toggle Menu">☰</button>
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+          <li class="nav__item"><a class="nav__link" href="movies.html">Movies</a></li>
+          <li class="nav__item"><a class="nav__link" href="characters.html">Characters</a></li>
+          <li class="nav__item"><a class="nav__link" href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <h2 class="hero__title">Welcome to the World of Ghibli</h2>
+      <img src="images/ghibli-banner.gif" alt="Studio Ghibli Animation" class="hero__img">
+      <p class="hero__text">Explore magical films, meet beloved characters, and learn about the legendary animation studio.</p>
+      
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">&copy; 2025 Studio Ghibli Fan Site | Made with love by our team</p>
+  </footer>
+
+  <script>
+    const toggleButton = document.querySelector('.nav__toggle');
+    const navList = document.querySelector('.nav__list');
+
+    toggleButton.addEventListener('click', () => {
+      navList.classList.toggle('nav__list--active');
+    });
+  </script>
+</body>
+
+</html>
+

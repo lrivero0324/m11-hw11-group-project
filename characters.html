@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Meet some of Studio Ghibli's most beloved characters." />
+  <title>Ghibli Characters</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <h1 class="header__title">Studio Ghibli Fan Site</h1>
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Toggle Menu">☰</button>
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+          <li class="nav__item"><a class="nav__link" href="movies.html">Movies</a></li>
+          <li class="nav__item"><a class="nav__link" href="characters.html">Characters</a></li>
+          <li class="nav__item"><a class="nav__link" href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="characters">
+      <h2 class="characters__title">Meet the Characters</h2>
+      <div class="characters__grid">
+
+        <div class="character-card">
+          <img src="images/totoro.gif" alt="Totoro waving" class="character-card__img">
+          <h3 class="character-card__name">Totoro</h3>
+          <p class="character-card__desc">A large, friendly forest spirit from <em>My Neighbor Totoro</em>.</p>
+        </div>
+
+        <div class="character-card">
+          <img src="images/chihiro.gif" alt="Chihiro running" class="character-card__img">
+          <h3 class="character-card__name">Chihiro Ogino</h3>
+          <p class="character-card__desc">A brave girl who finds herself in the spirit world in <em>Spirited Away</em>.</p>
+        </div>
+
+        <div class="character-card">
+          <img src="images/kiki.gif" alt="Kiki flying on broom" class="character-card__img">
+          <h3 class="character-card__name">Kiki</h3>
+          <p class="character-card__desc">A young witch-in-training navigating life and work in <em>Kiki's Delivery Service</em>.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">&copy; 2025 Studio Ghibli Fan Site | Character Page</p>
+  </footer>
+
+  <script>
+    const toggleButton = document.querySelector('.nav__toggle');
+    const navList = document.querySelector('.nav__list');
+    toggleButton.addEventListener('click', () => {
+      navList.classList.toggle('nav__list--active');
+    });
+  </script>
+</body>
+</html>
+
