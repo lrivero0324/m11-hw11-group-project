@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover the most iconic Studio Ghibli films." />
+  <title>Ghibli Movies</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <h1 class="header__title">Studio Ghibli Fan Site</h1>
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Toggle Menu">☰</button>
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+          <li class="nav__item"><a class="nav__link" href="movies.html">Movies</a></li>
+          <li class="nav__item"><a class="nav__link" href="characters.html">Characters</a></li>
+          <li class="nav__item"><a class="nav__link" href="about.html">About</a></li>
+        </ul>
+      </nav>1
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="movies">
+      <h2 class="movies__title">5 Iconic Ghibli Films</h2>
+      <div class="movies__grid">
+
+        <div class="movie-card">
+          <img src="images/spirited away train scene.gif" alt="Spirited Away movie poster" class="movie-card__img">
+          <h3 class="movie-card__name">Spirited Away</h3>
+        </div>
+
+        <div class="movie-card">
+          <img src="images/totoro at night.gif" alt="My Neighbor Totoro movie poster" class="movie-card__img">
+          <h3 class="movie-card__name">My Neighbor Totoro</h3>
+        </div>
+
+        <div class="movie-card">
+          <img src="images/princess mononoke 2.gif" alt="Princess Mononoke movie poster" class="movie-card__img">
+          <h3 class="movie-card__name">Princess Mononoke</h3>
+        </div>
+
+        <div class="movie-card">
+          <img src="images/calcifer.gif" alt="Howl's Moving Castle movie poster" class="movie-card__img">
+          <h3 class="movie-card__name">Howl's Moving Castle</h3>
+        </div>
+
+        <div class="movie-card">
+          <img src="images/kiki look at me.gif" alt="Kiki's Delivery Service movie poster" class="movie-card__img">
+          <h3 class="movie-card__name">Kiki's Delivery Service</h3>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">&copy; 2025 Studio Ghibli Fan Site | Movies Page</p>
+  </footer>
+
+  <script>
+    const toggleButton = document.querySelector('.nav__toggle');
+    const navList = document.querySelector('.nav__list');
+    toggleButton.addEventListener('click', () => {
+      navList.classList.toggle('nav__list--active');
+    });
+  </script>
+</body>
+</html>
