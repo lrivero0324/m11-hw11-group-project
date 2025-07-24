@@ -78,14 +78,16 @@ body {
   max-width: 600px;
   margin: 0 auto;
 }
-
-.hero__img {
+ .hero__img {
   margin-top: 1.5rem;
-  max-width: 100%;
+  width: 90%;
+  max-width: 700px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+
 
 /* Characters Section */
 .characters {
@@ -142,7 +144,7 @@ body {
   background-color: #9bcc80;
   padding: 1rem 2rem;
   text-align: center;
-  margin-top: 2rem;
+
 }
 
 .footer__text {
@@ -173,4 +175,27 @@ body {
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+/* Make sure the page takes full height */
+html, body {
+  height: 100%;
+}
+
+/* Make main take remaining space so footer sticks at bottom */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+}
+
+/* Remove extra bottom margin in hero if any */
+.hero {
+  margin-bottom: 0;
+}
+.main {
+  flex: 1;
+  background-color: #edf7e1; /* Same as your .hero section */
 }
